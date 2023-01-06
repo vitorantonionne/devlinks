@@ -1,0 +1,6 @@
+@charset "UTF-08";
+
+body {
+    background: url('../assets/bg-background/bg-mobile.jpg') no-repeat center center;
+    background-size: cover;   
+}
