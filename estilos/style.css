@@ -1,6 +1,66 @@
 @charset "UTF-08";
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
 body {
     background: url('../assets/bg-background/bg-mobile.jpg') no-repeat center center;
     background-size: cover;   
+    margin-top: 5.6rem;
+
+    font-family: 'Inter', sans-serif;
+    font-size: 1.6rem;
+    color: #F1F1F1;
+    display: grid;
+    place-items: center;
+}
+
+#container {
+    width: 36rem;
+    height: 71.2rem;
+
+    border: 1px solid black;
+}
+
+.img-perfil {
+    text-align: center;
+    margin-top: 2.4rem;
+    border: 1px solid red;
+}
+
+.img-perfil img {
+    width: 11.2rem;
+    height: 11.2rem;
+}
+
+.buttn {
+    text-align: center;
+}
+
+.links {
+    list-style-type: none;
+    border: 1px solid pink;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.links li {
+    text-align: center;
+}
+
+.links  li > a {
+    align-items: center;
+    color: #F1F1F1;
+    text-decoration: none;
+    padding: 1.6rem 2.4rem;
 }
