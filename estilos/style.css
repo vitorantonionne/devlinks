@@ -8,31 +8,47 @@
 
 :root {
     font-size: 62.5%;
+
+    --text-color: white;
+    --bg-url: url('../assets/bg-background/bg-mobile.jpg');
+    --border: rgba(255, 255, 255, 0.5);
+    --bg-bttn: rgba(255, 255, 255, 0.1);
+    --bg-bttn-hover: rgba(255, 255, 255, 0.05);
+    --social-hover: rgba(255, 255, 255, 0.2);
+    --bg-switch: url('../assets/bg-background/moon.star.svg');
+}
+
+.light {
+    --text-color: black;
+    --bg-url: url('../assets/bg-background/bgw-mobile.jpg');
+    --border: rgba(0, 0, 0, 0.5);
+    --bg-bttn: rgba(0, 0, 0, 0.05);
+    --bg-bttn-hover: rgba(0, 0, 0, 0.02);
+    --social-hover: rgba(0, 0, 0, 0.1);
+    --bg-switch: url('../assets/bg-background/sun.svg');
 }
 
 body {
-    background: url('../assets/bg-background/bg-mobile.jpg') no-repeat center center;
+    background: var(--bg-url) no-repeat center center;
     background-size: cover;   
     margin-top: 5.6rem;
 
     font-family: 'Inter', sans-serif;
     font-size: 1.6rem;
-    color: #F1F1F1;
+    color: var(--text-color);
+    font-weight: 500;
+
     display: grid;
     place-items: center;
 }
 
 #container {
-    width: 36rem;
-    height: 71.2rem;
-
-    border: 1px solid black;
+    padding: 0rem 2.4rem;
 }
 
 .img-perfil {
     text-align: center;
-    margin-top: 2.4rem;
-    border: 1px solid red;
+    padding: 2.4rem 0;
 }
 
 .img-perfil img {
@@ -40,27 +56,80 @@ body {
     height: 11.2rem;
 }
 
-.buttn {
-    text-align: center;
+.img-perfil p {
+    margin-top: 0.8rem;
+}
+
+.switch {
+
+}
+
+.switch button {
+    width: 3.2rem;
+    height: 3.2rem;
+    border: none;
+    border-radius: 50%;
+    background: var(--bg-switch) no-repeat center;
+    background-color: white;
 }
 
 .links {
-    list-style-type: none;
-    border: 1px solid pink;
-
     display: flex;
+    padding: 2.4rem 0rem;
+
     flex-direction: column;
     align-items: center;
     gap: 1.6rem;
+
+    list-style-type: none;
 }
 
-.links li {
-    text-align: center;
-}
+.links li  a {
+    display: flex;
+    justify-content: center;
 
-.links  li > a {
-    align-items: center;
-    color: #F1F1F1;
-    text-decoration: none;
+    width: 31.2rem;
     padding: 1.6rem 2.4rem;
+
+    border: 1px solid var(--border);
+    text-decoration: none;
+    color: var(--text-color);
+
+    background-color: var(--bg-bttn);
+
+    border-radius: 1rem;
+    transition: background 0.3s;
+}
+
+.links li a:hover {
+    border: 1.5px solid var(--border);
+    background: var(--bg-bttn-hover);
+
+    transform: scale(1.1);
+
+}
+
+.icons {
+    padding: 2.4rem 0;
+    display: flex;
+    justify-content: center;
+
+    font-size: 2.4rem;
+}
+
+.icons a {
+    color: var(--text-color);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1.6rem;
+
+    border-radius: 50%;
+    transition: background .3s ease-in-out;
+}
+
+.icons a:hover {
+    background: var(--social-hover);
 }
