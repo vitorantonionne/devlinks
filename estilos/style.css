@@ -77,6 +77,8 @@ body {
     position: absolute;
     transform: translateY(-11%);
     left: 0;
+
+    cursor: pointer;
 }
 
 .switch span {
@@ -152,4 +154,11 @@ body {
 
 .icons a:hover {
     background: var(--social-hover);
+}
+
+@media screen and (min-width: 700px) {
+    .links li a  {
+        width: 38.2rem;
+        padding: 1.4rem 2.4rem;
+    }
 }
