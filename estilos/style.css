@@ -160,7 +160,7 @@ body {
     background: var(--social-hover);
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 800px) {
     body {
         background: var(--bg-url-desk) no-repeat center center;
         background-size: cover; 
