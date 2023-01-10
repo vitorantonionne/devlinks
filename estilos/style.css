@@ -11,6 +11,7 @@
 
     --text-color: white;
     --bg-url: url('../assets/bg-background/bg-mobile.jpg');
+    --bg-url-desk: url('../assets/bg-background/bg-desktop.jpg') ;
     --border: rgba(255, 255, 255, 0.5);
     --bg-bttn: rgba(255, 255, 255, 0.1);
     --bg-bttn-hover: rgba(255, 255, 255, 0.05);
@@ -21,11 +22,16 @@
 .light {
     --text-color: black;
     --bg-url: url('../assets/bg-background/bgw-mobile.jpg');
+    --bg-url-desk: url('../assets/bg-background/bgw-desktop.jpg') ;
     --border: rgba(0, 0, 0, 0.5);
     --bg-bttn: rgba(0, 0, 0, 0.05);
     --bg-bttn-hover: rgba(0, 0, 0, 0.02);
     --social-hover: rgba(0, 0, 0, 0.1);
     --bg-switch: url('../assets/bg-background/sun.svg');
+}
+
+html {
+    height: 100%;
 }
 
 body {
@@ -37,9 +43,6 @@ body {
     font-size: 1.6rem;
     color: var(--text-color);
     font-weight: 500;
-
-    display: grid;
-    place-items: center;
 }
 
 #container {
@@ -110,7 +113,8 @@ body {
     display: flex;
     justify-content: center;
 
-    width: 31.2rem;
+    width: 70vw;
+    max-width: 47.8rem;
     padding: 1.6rem 2.4rem;
 
     border: 1px solid var(--border);
@@ -157,8 +161,8 @@ body {
 }
 
 @media screen and (min-width: 700px) {
-    .links li a  {
-        width: 38.2rem;
-        padding: 1.4rem 2.4rem;
+    body {
+        background: var(--bg-url-desk) no-repeat center center;
+        background-size: cover; 
     }
 }
