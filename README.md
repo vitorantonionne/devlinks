@@ -19,7 +19,7 @@ Programa exclusivo e gratuito, promovido pela Rocketseat para ensino de tecnolog
 <br>
 
 <p align="center">
-  ![image](https://user-images.githubusercontent.com/114239671/211549968-3f2b000a-6fc4-4044-87b0-7042b6ba76a8.png)
+  (https://user-images.githubusercontent.com/114239671/211549968-3f2b000a-6fc4-4044-87b0-7042b6ba76a8.png)
 </p>
 
 ## 🚀 Tecnologias
