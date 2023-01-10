@@ -81,6 +81,8 @@ body {
     transform: translateY(-11%);
     left: 0;
 
+    animation: slide-back .3s ;
+
     cursor: pointer;
 }
 
@@ -93,9 +95,16 @@ body {
     border-radius: 99.99rem;
 }
 
+.switch button:hover {
+    outline: 0.8rem solid var(--bg-bttn);
+}
+
 .light .switch button {
-    right: 0;
-    left: initial;
+    animation: slide-in .3s forwards;  
+}
+
+.light .switch button:hover {
+    outline: 0.8rem solid var(--bg-bttn);
 }
 
 .links {
@@ -164,5 +173,23 @@ body {
     body {
         background: var(--bg-url-desk) no-repeat center center;
         background-size: cover; 
+    }
+}
+
+@keyframes slide-in {
+    from {
+        left: 0;
+    }
+    to {
+        left: 50%;
+    }
+}
+
+@keyframes slide-back {
+    from {
+        left: 50%;
+    }
+    to {
+        left: 0;
     }
 }
